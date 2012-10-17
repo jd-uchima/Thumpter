@@ -1,0 +1,460 @@
+/*------------------------------------------
+	DESIGNED AND CODED BY JDUCHIMA.COM
+------------------------------------------*/	
+
+
+@charset "UTF-8";
+/* RESET */
+
+html, body, div, span, object,h1, h2, h3, h4, h5, h6, p, blockquote, pre, font,
+a, code, em, font, img, ins, kbd, q, s, samp, small,strong,dl, dt, dd, ol, ul, li,
+fieldset, form, label {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: .5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+a {
+text-decoration: none;
+color: #4e4e4e;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+
+
+
+/*------------------------------
+ MAIN STYLES
+------------------------------*/
+
+body {
+	background: url('images/bg_tile.gif') repeat;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+#header {
+	background-color: #f7f7f7;
+	background: url('images/header_bg.gif') repeat;
+	height: 65px;
+}
+
+#mainlogo {
+	margin-top: 12px;
+	margin-left: 20px
+}
+
+.wrapper {
+	width: 980px;
+	margin: 0px auto;
+}
+
+#headernav {
+	float: right;
+	line-height: 14px;
+	width: 140px;
+}
+
+#header_signout {
+	border-right: 1px solid #ebebeb;
+}
+
+#header_signout, #header_settings {
+	display: inline-block;
+	font-size: 10px;
+	padding: 0px 10px 0px 15px; 
+	border-left: 1px solid #ebebeb;
+}
+
+#header_signout img, #header_settings img {
+	width: 16px;
+	height: 16px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+
+#username {
+	width: 170px;
+	position: relative;
+	top: 25px;
+	right: 185px;
+}
+
+#username p {
+	text-align: right;
+}
+
+#username img {
+	width: 36px;
+	height: 34px;
+	position: absolute;
+	top: -10px;
+}
+
+#container {
+	width: 980px;
+	min-height: 800px;
+	overflow: auto;
+	background-color: white;
+	display: block;
+	margin-bottom: -3px;
+}
+
+h2 {
+	font-size: 18px;
+	color: #cc2d2d;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+
+/*------------------------------
+ MAIN LEFT SIDE NAV
+------------------------------*/
+
+
+#nav {
+	width: 190px;
+	min-height: 200px;
+	background-color: #f8f8f8;
+	float: left;
+	margin-left: 32px;
+	margin-top: 40px;
+	border: 1px solid #e5e5e5;
+	border-right: 0px;
+	font-size: 16px;
+	color: #666666;	
+	
+}
+
+ul#left_nav {
+	margin-left: 15px;
+	margin-top: 25px;	
+}
+
+#left_nav li {
+	display: block;
+	margin-bottom: 35px;
+}
+
+ul#left_nav img {
+	width: 14px;
+	height: 17px;
+	float: right;
+	margin-right: 15px;
+	position: relative;
+	bottom: 12px;
+}
+
+li.selected_nav {
+	background: url('images/selected_nav.gif') no-repeat;
+	width: 227px;
+	height: 43px;
+	position: relative;
+	bottom: 30px;
+	right: 26px;
+	margin-bottom: 0px !important;
+}
+
+li.selected_nav p {
+	position: relative;
+	left: 25px;
+	top: 18px;
+	color: #ffffff;
+	font-weight: bold;
+	text-shadow: 0px 1px 0px #363636;
+}
+
+
+
+/*------------------------------
+ MAIN BODY & CONTENT AREA
+------------------------------*/
+
+
+#body {
+	width: 730px;
+	min-height: 750px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	background-color: white;
+	border: 1px solid #e5e5e5;	
+	float: right;
+	margin-right: 25px;
+	overflow: auto;
+}
+
+
+/* MY OPERATORS SECTION
+------------------------------*/
+
+#my_operators {
+	width: 660px;
+	overflow: auto;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#my_operators img {
+	float: left;
+	margin-right: 15px;
+}
+
+.operators_status {
+	width: 155px;
+	height: 125px;
+	border: 1px solid #e5e5e5;
+	float: left;
+	margin-right: 8px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.op_name {
+	width: 125px;
+	height: 35px;
+	padding-top: 15px;
+	margin: 0 auto;
+	border-bottom: 1px dashed #e5e5e5;
+	padding-bottom: 20px;	
+}
+
+	.op_name img {
+		margin-right: 10px !important;
+	}
+
+	.status_online {
+		background-color: #9ebb86;
+		position: relative;
+		top: 15px;
+		display: block;
+		color: white;
+		font-size: 14px;
+		line-height: 25px;
+		width: 125px;
+		height: 25px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.status_offline {
+		background-color: #666666;
+		position: relative;
+		top: 15px;
+		display: block;
+		color: white;
+		font-size: 14px;
+		line-height: 25px;
+		width: 125px;
+		height: 25px;
+		margin: 0 auto;
+		text-align: center;
+	}	
+
+	.operators_status p {
+		font-size: 14px;
+		color: #666666;
+		line-height: 16px;
+	}
+	
+	
+/* CURRENT VISITORS ON SITES SECTION
+------------------------------------*/
+
+#current_visitors {
+	width: 660px;
+	overflow: auto;
+	margin: 0 auto;
+	margin-top: 65px;
+}
+
+#current_visitors img {
+	float: left;
+	margin-right: 15px;
+}
+
+#dashboard_chat_holder {
+	min-height: 420px;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;	
+}
+
+
+/* MOST RECENT CHATS SECTION
+------------------------------------*/
+
+#recent_chats {
+	width: 660px;
+	overflow: auto;
+	margin: 0 auto;
+	margin-top: 65px;
+	margin-bottom: 25PX;
+}
+
+#recent_chats img {
+	float: left;
+	margin-right: 15px;
+}
+
+.site_chat_module_left, .site_chat_module_right {
+	width: 320px;
+	height: 260px;
+	border: 1px solid #e5e5e5;
+	float: left;
+	margin-right: 8px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.site_chat_module_right {
+	float: right;
+	margin-right: 0px;
+}
+
+.site_chat_title {
+	width: 300px;
+	height: 10px;
+	padding-top: 15px;
+	border-bottom: 1px dashed #e5e5e5;
+	padding-bottom: 20px;
+	margin: 0px auto;	
+}
+
+	.site_chat_title p {
+		font-size: 14px;
+		color: #666666;
+		line-height: 16px;
+	}
+	
+.site_chat_list {
+	width: 300px;
+	height: 190px;
+	background: #f4f4f4;
+	position: relative;
+	margin-top: 25px;
+	border: 1px solid #e5e5e5;
+}
+
+	.chat_listing_1, .chat_listing_2, .chat_listing_3, .chat_listing_4 {
+		width: 285px;
+		margin: 0px auto;
+		padding: 14px 0px 15px 0px;
+		border-bottom: 1px solid #bbbbbb;	
+	}
+	
+		.chat_listing_4 {
+			border-bottom: none;
+		}
+	
+	p.chat_id {
+		display: inline;
+	}
+	
+	span.chat_line_count {
+		display: inline;
+		background-color: #666666;
+		color: white;
+		font-size: 10px;
+		font-weight: bold;
+		margin-left: 15px;
+		padding: 4px 7px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;		
+	}
+	
+	a.view_chat_log {
+		display: inline;
+		position: relative;
+		bottom: 5px;
+		background: url('images/recent_chat_sprite.png') 0px 0px no-repeat;
+		color: white;
+		font-size: 12px;
+		font-weight: bold;
+		text-shadow: 0px 1px 1px #535353;
+		width: 103px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		text-decoration: none;
+		float: right;
+	}
+	
+		a.view_chat_log:hover {
+			background: url('images/recent_chat_sprite.png') 0px -30px no-repeat;
+		}
+		
+		
+/*------------------------------
+ FOOTER Section
+------------------------------*/
+
+#footer_bg {
+	background-color: #f7f7f7;
+	height: 56px;
+	background: url('images/footer_bg.png') repeat-x;
+}
+
+#footer {
+	font-size: 10px;
+	color: #ae2626;
+	width: 980px;
+	margin: 0px auto;
+}
+
+	#footer a {
+		color: #ae2626;
+	}
+
+	#footer p {
+		position: relative;
+		line-height: 10px;
+		top: 25px;
+		width: 110px;
+		margin: 0px auto;
+	}
+
+ul.footer_links {
+	position: relative;
+	top: 15px;
+	width: 341px;
+	margin: 0px auto;
+	line-height: 10px;	
+}		
+
+	.footer_links li {
+		display: inline-block;
+	}
+		
+		
+				
