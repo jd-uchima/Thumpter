@@ -67,7 +67,8 @@ body {
 
 #mainlogo {
 	margin-top: 12px;
-	margin-left: 20px
+	margin-left: 20px;
+	float: left;
 }
 
 .wrapper {
@@ -130,7 +131,21 @@ h2 {
 	font-size: 18px;
 	color: #cc2d2d;
 	padding: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+}
+
+h2.crumb_heading {
+	padding: 0px;
+	line-height: 18px;
+	padding-top: 5px;	
+}
+
+a.breadcrumb {
+	float: left;
+	line-height: 18px;
+	font-size: 16px;
+	color: #cc2d2d;
+	padding-top: 5px;
 }
 
 
@@ -333,6 +348,7 @@ input {
 .upload_display {
 	float: left;
 	margin-top: 10px;
+	width: 400px;
 }
 
 .upload_display input:hover {
@@ -352,7 +368,7 @@ span.helper_text {
 	font-size: 10px;
 	float: left;
 	color: #4E4E4E;
-	margin-bottom: 40px;	
+	margin-bottom: 40px;
 }
 
 .checkboxes {
@@ -549,6 +565,7 @@ p.subhead {
 	width: 300px;
 	line-height: 12px;
 	float: left;
+	margin-left: 40px;
 }
 
 #section_header {
