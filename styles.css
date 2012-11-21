@@ -148,6 +148,11 @@ a.breadcrumb {
 	padding-top: 5px;
 }
 
+span.edit_op_name {
+	font-size: 16px;
+	color: #cc2d2d;
+}
+
 
 /*------------------------------
  MAIN LEFT SIDE NAV
@@ -398,17 +403,21 @@ span.helper_text {
 	display: inline-block;
 }
 
-.new_op_buttons {
+.new_op_buttons, .edit_op_buttons {
 	float: left;
 	margin-left: 185px;
 }
 
-.new_op_buttons input {
+.edit_op_buttons {
+	margin-left: 150px;
+}
+
+.new_op_buttons input, .edit_op_buttons input {
 	width: 100px;
 	margin-right: 20px;
 }
 
-.new_op_buttons input:hover {
+.new_op_buttons input:hover, .edit_op_buttons input:hover {
 	cursor: pointer;
 }
 	
