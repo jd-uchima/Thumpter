@@ -211,6 +211,15 @@ li.selected_nav p {
 	text-shadow: 0px 1px 0px #363636;
 }
 
+	.selected_state {
+		margin-right: 35px !important;
+		bottom: -3px !important;
+	}
+	
+	.indicator_selected {
+		bottom: -3px !important;
+	}
+
 .indicator {
 	width: 20px !important;
 	height: 20px !important;
@@ -555,7 +564,7 @@ span.helper_text {
  MANAGE YOUR OPERATORS SECTION
 ------------------------------*/
 
-#manage_operators {
+#manage_operators, #main_container {
 	width: 660px;
 	min-height: 800px;
 	overflow: auto;
@@ -563,7 +572,7 @@ span.helper_text {
 	margin-top: 20px;
 }
 
-#manage_operators img {
+#manage_operators img, #section_header img {
 	float: left;
 	margin-right: 15px;
 }
@@ -582,7 +591,7 @@ p.subhead {
 	height: 75px;
 }
 
-a.add_new_operator {
+a.add_new_operator, a.add_new_site {
 	float: right;
 	display: block;
 	width: 210px;
@@ -590,13 +599,22 @@ a.add_new_operator {
 	background: url('images/add_op_button.png') no-repeat;
 	background-position: 0px 0px;
 	text-indent: -9999px;
-	margin-top: -45px
+	margin-top: -45px;
 }
 
 	a.add_new_operator:hover {
 		background: url('images/add_op_button.png') no-repeat;
 		background-position: 0px -38px;
 	}
+	
+a.add_new_site {
+	background: url('images/add_site_button.png') no-repeat;
+}
+
+	a.add_new_site:hover {
+		background: url('images/add_site_button.png') no-repeat;
+		background-position: 0px -38px;		
+	}	
 
 .manage_operators_status {
 	width: 155px;
@@ -648,6 +666,117 @@ a.add_new_operator {
 		color: white;
 	}
 
+
+/*------------------------------
+ MANAGE SITES Section
+------------------------------*/
+
+#manage_site_container, #manage_site_container_2 {
+	min-height: 250px;
+	overflow: auto;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;		
+}
+
+#manage_site_container_2 {
+	margin-top: 25px;
+}
+
+.site_container_header {
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-bottom: 35px;
+	border-bottom: 1px dashed #c9c9c9;
+}
+
+p.siteURL {
+	font-size: 18px;
+	color: #666666;
+	line-height: 16px;
+	font-weight: bold;
+	float: left;	
+}
+
+p.site_action_links {
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 18px;
+	float: left;
+	margin-left: 15px;
+}
+
+	p.site_action_links a {
+		text-decoration: underline;
+	}
+	
+.status_active, .status_inactive {
+	background-color: #9ebb86;
+	display: block;
+	color: white;
+	font-size: 10px;
+	line-height: 18px;
+	width: 100px;
+	height: 18px;
+	margin: 0 auto;
+	text-align: center;
+	float: right;
+	font-weight: bold;
+	margin-left: 25px;	
+}
+
+	.status_inactive {
+		background-color: #666666;
+	}
+
+h3 {
+	font-size: 12px;
+	color: #666666;
+	font-weight: 300;
+	margin: 0px auto;
+	width: 320px;
+	margin-top: 20px;
+	margin-bottom: 10px;	
+}
+	
+	h3 a {
+		text-decoration: underline;
+	}
+	
+.checkboxes_sites {
+	margin-top: 20px;
+	width: 530px;
+	float: left;
+	margin-left: 50px;
+}
+
+	.checkboxes_sites label {
+		width: 200px;
+		line-height: 18px;
+	}
+
+.checkboxes_sites input, .right_check_row {
+	width: 25px;
+	margin-bottom: 15px;
+	float: left;
+}
+
+.sites_left_check_row {
+	width: 210px;
+	float: left;
+}
+
+.sites_right_check_row {
+	width: 210px;
+	float: right;
+	
+}
+
+.sites_left_check_row ul li, .sites_right_check_row ul li {
+	display: inline-block;
+}
 		
 /*------------------------------
  FOOTER Section
