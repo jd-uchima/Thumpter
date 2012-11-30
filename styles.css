@@ -213,11 +213,11 @@ li.selected_nav p {
 
 	.selected_state {
 		margin-right: 35px !important;
-		bottom: -3px !important;
+		bottom: -5px !important;
 	}
 	
 	.indicator_selected {
-		bottom: -3px !important;
+		bottom: -5px !important;
 	}
 
 .indicator {
@@ -736,7 +736,8 @@ h3 {
 	color: #666666;
 	font-weight: 300;
 	margin: 0px auto;
-	width: 320px;
+	width: 550px;
+	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 10px;	
 }
@@ -758,10 +759,13 @@ h3 {
 	}
 
 .checkboxes_sites input, .right_check_row {
-	width: 25px;
 	margin-bottom: 15px;
-	float: left;
 }
+
+	.checkboxes_sites input {
+		width: 25px;
+		float: left;
+	}
 
 .sites_left_check_row {
 	width: 210px;
@@ -777,6 +781,17 @@ h3 {
 .sites_left_check_row ul li, .sites_right_check_row ul li {
 	display: inline-block;
 }
+
+.getcode_hidden {
+	width: 450px;
+	margin-bottom: -40px;
+	display: none;
+}
+
+	.getcode_hidden input {
+		width: 450px;
+		margin-top: 15px;
+		}
 		
 /*------------------------------
  FOOTER Section
