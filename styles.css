@@ -412,21 +412,24 @@ span.helper_text {
 	display: inline-block;
 }
 
-.new_op_buttons, .edit_op_buttons {
+.new_op_buttons, .edit_op_buttons, .add_new_site_buttons {
 	float: left;
 	margin-left: 185px;
 }
+	.add_new_site_buttons {
+		margin-top: 15px;
+	}
 
 .edit_op_buttons {
 	margin-left: 150px;
 }
 
-.new_op_buttons input, .edit_op_buttons input {
+.new_op_buttons input, .edit_op_buttons input, .add_new_site_buttons input {
 	width: 100px;
 	margin-right: 20px;
 }
 
-.new_op_buttons input:hover, .edit_op_buttons input:hover {
+.new_op_buttons input:hover, .edit_op_buttons input:hover, .add_new_site_buttons input:hover {
 	cursor: pointer;
 }
 	
@@ -782,16 +785,29 @@ h3 {
 	display: inline-block;
 }
 
-.getcode_hidden {
+.getcode_hidden, .enter_new_URL {
 	width: 450px;
 	margin-bottom: -40px;
 	display: none;
 }
 
+	.enter_new_URL {
+		display: inline;
+		margin-bottom: 0px;
+	}
+
 	.getcode_hidden input {
 		width: 450px;
 		margin-top: 15px;
 		}
+		
+	.enter_new_URL input {
+		width: 400px;
+		line-height: 20px;
+		margin-top: -5px;
+		margin-bottom: -15px;
+		margin-left: 15px;
+		}		
 		
 /*------------------------------
  FOOTER Section
