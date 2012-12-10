@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="chat, thumpter" />
+
+<meta name="description" content="Thumpter description" />
+
+<title>Thumpter | Customize chat window</title>
+
+<link rel="stylesheet" href="styles.css" />
+<link rel="shortcut icon" href="images/icon.ico" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		
+<script type="text/javascript" src="color_picker/jquery.miniColors.js"></script>
+<link type="text/css" rel="stylesheet" href="color_picker/jquery.miniColors.css" />
+
+<script type="text/javascript">
+			
+			$(document).ready( function() {
+				
+				function init() {
+					
+					$('.color-picker').each( function() {
+					
+						$(this).miniColors({
+							opacity: $(this).hasClass('opacity'),
+							change: function(hex, rgba) {
+								$('#console').prepend('change: ' + hex + ', rgba(' + rgba.r + ', ' + rgba.g + ', ' + rgba.b + ', ' + rgba.a + ')<br>');
+							},
+							open: function(hex, rgba) {
+								$('#console').prepend('open: ' + hex + ', rgba(' + rgba.r + ', ' + rgba.g + ', ' + rgba.b + ', ' + rgba.a + ')<br>');
+							},
+							close: function(hex, rgba) {
+								$('#console').prepend('close: ' + hex + ', rgba(' + rgba.r + ', ' + rgba.g + ', ' + rgba.b + ', ' + rgba.a + ')<br>');
+							}
+						});
+						
+					});
+					
+				}
+				
+				init();
+				
+				$('#disable').click( function() {
+					$('#console').prepend('disable<br />');
+					$('.color-picker, .color-picker').miniColors('disabled', true);
+					$("#disable").prop('disabled', true);
+					$("#enable").prop('disabled', false);
+				});
+				
+				$('#enable').click( function() {
+					$('#console').prepend('enable<br />');
+					$('.color-picker, .color-picker').miniColors('disabled', false);
+					$("#disable").prop('disabled', false);
+					$("#enable").prop('disabled', true);
+				});
+				
+				$('#makeReadonly').click( function() {
+					$('#console').prepend('readonly = true<br />');
+					$('.color-picker').miniColors('readonly', true);
+					$("#unmakeReadonly").prop('disabled', false);
+					$("#makeReadonly").prop('disabled', true);
+				});
+				
+				$('#unmakeReadonly').click( function() {
+					$('#console').prepend('readonly = false<br />');
+					$('.color-picker').miniColors('readonly', false);
+					$("#unmakeReadonly").prop('disabled', true);
+					$("#makeReadonly").prop('disabled', false);
+				});
+				
+				$('#destroy').click( function() {
+					$('#console').prepend('destroy<br />');
+					$('.color-picker').miniColors('destroy');
+					$("INPUT[type=button]:not(#create)").prop('disabled', true);
+					$("#destroy").prop('disabled', true);
+					$("#create").prop('disabled', false);
+				});
+				
+				$('#create').click( function() {
+					$('#console').prepend('create<br />');
+					init();
+					$("#makeReadonly, #disable, #destroy, #randomize").prop('disabled', false);
+					$("#destroy").prop('disabled', false);
+					$("#create").prop('disabled', true);
+				});
+				
+			});
+			
+		</script>
+
+
+</head>
+
+<body>
+
+	<div id="header">
+		<div class="wrapper">
+		
+			<a href="index.html"><img src="images/thumpterlogo.png" alt="Thumpter" id="mainlogo"></a>
+			
+			<div id="headernav">
+			
+				<div id="username">
+					<img src="images/admin_photo.gif">
+					<p>Hello, User name</p>
+				</div>
+				
+				<div id="header_settings">
+					<a href="#"><img src="images/settings_icon.gif"></a>
+					<p><a href="#">Settings</a></p>
+				</div>
+				
+				<div id="header_signout">
+					<a href="#"><img src="images/signout_icon.gif"></a>
+					<p><a href="#">Sign Out</a></p>
+				</div>	
+				
+			</div>
+			
+		</div><!end wrapper>
+		
+	</div><!End header div>
+	
+	<div class="wrapper">
+	
+	<div id="container">
+	
+		<div id="nav">
+			
+			<ul id="left_nav">
+				
+				<li class="non_selected"><p><a href="index.html">Dashboard</a></p></li>
+				
+				<li class="non_selected"><p><a href="#">Manage Operators</a></p></li>
+				
+				<li class="selected_nav"><p>Customize Chat</p><img class="selected_state" src="images/customize_chat.gif"></li>
+				
+				<li class="non_selected"><p><a href="#">Manage Sites</a></p><img src="images/manageSite_icon.gif"><img class="indicator" src="images/site_indicator-sprite.png"></li>
+				
+				<li class="non_selected"><p><a href="#">View Chat Logs</a></p><img src="images/chatLogs_icon.gif"></li>
+				
+				<li class="non_selected"><p><a href="#">Settings</a></p><img src="images/small_settings_icon.gif"></li>
+			
+			</ul>
+			
+		</div><!end left nav>
+		
+		<div id="body">
+		
+			<div id="main_container">
+			
+				<div id="section_header">
+					<img src="images/home_icon.gif"><a class="breadcrumb" href="#">Customize chat</a><h2 class="crumb_heading"> &nbsp;> Customize chat window for</h2>
+					<p class="subhead">Select colors, position and set your chat window style</p>
+				
+				</div><!end header area for sub sections>
+				
+				<div id="color_pickers">
+					
+					<h3 class="customize_headings">Widget colors:</h3>
+				
+					<div id="left_pickers">
+						<p>Main background<br /><input type="text" name="color1" class="color-picker" size="7" autocomplete="on" value="#CC2D2D" /></p>
+						
+						<p>Operator text color<br /><input type="text" name="color2" class="color-picker" size="7" autocomplete="on" value="#e5e5e5" /></p>
+						
+						<p>Text input background<br /><input type="text" name="color3" class="color-picker" size="7" autocomplete="on" value="#e5e5e5" /></p>
+					</div><!end left picker column>
+					
+					<div id="right_pickers">
+						<p>Widget title text<br /><input type="text" name="color4" class="color-picker" size="7" autocomplete="on" value="#e5e5e5" /></p>
+						
+						<p>Visitor text color<br /><input type="text" name="color5" class="color-picker" size="7" autocomplete="on" value="#e5e5e5" /></p>
+						
+						<p>Send button color<br /><input type="text" name="color6" class="color-picker" size="7" autocomplete="on" value="#e5e5e5" /></p>
+					</div><!end right picker column>
+					
+					<div id="dimensions">
+						<h3 class="customize_headings">Dimensions and position:</h3>					
+						
+						<p class="width_area">Width<br /><input type="text" name="width" class="chat_width" value="250px" /></p>
+						
+						<p class="height_area">height<br /><input type="text" name="height" class="chat_height" value="450px" /></p>
+					</div><!end dimensions selector area>
+					
+					<div id="position">
+						<p>Chat widget location on your site</p>
+						
+						<div id="location_preview">
+						</div><!end location preview graphic>
+						
+						<div id="location_pickers">
+							<div id="left_radio_column">
+								<input type="radio" name="position" value="topleft">Top left<br>
+								<input type="radio" name="position" value="topleft">Center left<br>
+								<input type="radio" name="position" value="topleft">Bottom left<br>
+							</div><!end left column of radios>
+							
+							<div id="right_radio_column">
+								<input type="radio" name="position" value="topleft">Top right<br>
+								<input type="radio" name="position" value="topleft">Center right<br>
+								<input type="radio" name="position" value="topleft" checked>Bottom right<br>
+							</div><!end right column of radios>
+							
+						</div><!end location picker radio buttons>
+						
+					</div><!end position area>					
+											
+				</div><!end left aligned color pickers area>
+				
+				<div id="chat_preview">
+				
+				</div><!end right aligned chat preview>
+				
+				<div class="center_button">
+					<input type="submit" value="Save & get code">
+				</div>
+				
+		</div><!end right body area>
+	
+	</div><!End main container area>
+	
+	</div><!End wrapper>
+
+	
+	<div id="footer_bg">
+		<div id="footer">
+			<ul class="footer_links">
+				<li><a href="#">Dashboard</a> |</li>
+				<li><a href="#">Manage Operators</a> |</li>
+				<li><a href="#">Manage sites</a> |</li>
+				<li><a href="#">View chat logs</a> |</li>
+				<li><a href="#">Settings</a></li>
+			</ul>
+			<p>© 2012 Thumpter, LLC.</p>
+		</div>
+	</div><!End footer BG div>
+
+
+</body>
