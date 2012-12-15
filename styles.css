@@ -214,6 +214,8 @@ li.selected_nav p {
 	.selected_state {
 		margin-right: 35px !important;
 		bottom: -5px !important;
+		width: 18px !important;
+		height: 17px !important;
 	}
 	
 	.indicator_selected {
@@ -814,7 +816,7 @@ h3 {
  CUSTOMIZE CHAT Section
 ------------------------------*/
 
-#color_pickers, #chat_preview {
+#color_pickers, #chat_preview, #code_display {
 	min-height: 250px;
 	width: 300px;
 	overflow: visible;
@@ -836,6 +838,13 @@ h3 {
 		font-size: 11px;
 		color: #4E4E4E;
 	}
+
+#code_display textarea {
+	width: 90%;
+	min-height: 250px;
+	border: none;
+	padding: 10px; 
+}
 
 #chat_preview {
 	width: 300px;
@@ -932,7 +941,7 @@ h3.customize_headings {
 		float: right;
 	}
 	
-.center_button {
+.center_button, .center_button_long {
 	width: 660px;
 	height: 25px;
 	float: left;
@@ -944,7 +953,35 @@ h3.customize_headings {
 		width: 125px;
 		margin-left: 250px;
 		margin-top: 20px;
-	}				
+	}
+	
+	.center_button_long input {
+		width: 200px;
+		margin-left: 200px;
+		margin-top: 20px;
+	}					
+
+#site_name_container {
+	min-height: 50px;
+	min-width: 250px;
+	overflow: visible;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	float: left;
+	margin-bottom: 0px !important;
+	margin: 35px;
+}
+
+	#site_name_container p {
+		font-size: 13px;
+		font-weight: bold;
+		color: #4E4E4E;
+		line-height: 50px;
+		text-align: center;
+	}
+
 		
 /*------------------------------
  FOOTER Section
