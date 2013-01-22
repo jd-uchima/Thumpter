@@ -440,7 +440,6 @@ span.helper_text {
 
 #current_visitors {
 	width: 660px;
-	overflow: auto;
 	margin: 0 auto;
 	margin-top: 65px;
 }
@@ -450,7 +449,7 @@ span.helper_text {
 	margin-right: 15px;
 }
 
-#dashboard_chat_holder {
+#chat_module {
 	min-height: 420px;
 	border: 1px solid #e5e5e5;
 	-webkit-border-radius: 10px;

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="chat, thumpter" />
+
+<meta name="description" content="Thumpter description" />
+
+<title>Thumpter | Chat Window</title>
+
+<link rel="stylesheet" href="chatstyles.css" />
+<link rel="shortcut icon" href="images/icon.ico" />
+
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$("li.selected").fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500);
+	});
+</script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div id="chatborder">
+
+<div id="chat_module">
+
+	<div id="visitors">
+	
+		<ol class="visitor_list">
+			<li><a href="#">192.256.5.6</a></li>
+			<li><a href="#">192.256.5.6</a></li>
+			<li><a href="#">192.256.532.436</a></li>
+			<li><a href="#">192.256.5.6</a></li>
+			<li class="selected"><a href="#">192.168.0.1</a><span><img src="images/close-x.png"></span></li>
+			<li><a href="#">192.256.5.6</a></li>
+			<li><a href="#">192.256.5.6</a></li>
+			<li><a href="#">192.256.5.6</a></li>
+			<li><a href="#">192.256.532.436</a></li>
+			<li><a href="#">192.256.5.6</a></li>
+			<li><a href="#">192.256.5.6</a></li>
+			<li><a href="#">192.256.5.6</a></li>
+			<li><a href="#">192.256.532.436</a></li>
+			<li><a href="#">192.256.5.6</a></li>
+		</ol>
+	
+	</div><!--end left aligned visitors display-->
+	
+	<div id="transcript">
+	
+		<ol class="chat">
+		
+			<li class="outbound">
+				<p class="visitor_name">Visitor - IP 192.168.0.1</p>
+				<p class="time_stamp">2:40pm</p>
+				<ol class="messages">
+					<li><div class="message">Hello, I need some help with some questions.</div></li>
+					<li><div class="message">Can help me?</div></li>
+				</ol>
+			</li>
+			
+			<li class="inbound">
+				<p class="operator_name">Steve McOperator</p>
+				<p class="time_stamp">2:42pm</p>
+				<ol class="messages">
+					<li><div class="message">Of course! Not a problem</div></li>
+					<li><div class="message">How can I help you today?</div></li>
+				</ol>
+			</li>
+			
+			<li class="outbound">
+				<p class="visitor_name">Visitor - IP 192.168.0.1</p>
+				<p class="time_stamp">2:45pm</p>
+				<ol class="messages">
+					<li><div class="message">Hello, I need some help with some questions.</div></li>
+					<li><div class="message">Can help me?</div></li>
+				</ol>
+			</li>
+			
+			<li class="inbound">
+				<p class="operator_name">Steve McOperator</p>
+				<p class="time_stamp">2:47pm</p>
+				<ol class="messages">
+					<li><div class="message">Of course! Not a problem</div></li>
+					<li><div class="message">How can I help you today?</div></li>
+				</ol>
+			</li>
+			
+			<li class="outbound">
+				<p class="visitor_name">Visitor - IP 192.168.0.1</p>
+				<p class="time_stamp">2:49pm</p>
+				<ol class="messages">
+					<li><div class="message">Hello, I need some help with some questions.</div></li>
+					<li><div class="message">Can help me?</div></li>
+				</ol>
+			</li>
+			
+			<li class="inbound">
+				<p class="operator_name">Steve McOperator</p>
+				<p class="time_stamp">3:01pm</p>
+				<ol class="messages">
+					<li><div class="message">Of course! Not a problem</div></li>
+					<li><div class="message">How can I help you today?</div></li>
+				</ol>
+			</li>
+			
+			<li class="typing">
+				<p>Visitor is typing...</p>
+			</li>
+		
+		</ol>
+	
+	</div><!--end main chat body-->
+	
+	
+	<div id="sendbox">
+	
+	<input type="text" name="xxx" value="" size="63">
+	
+	<input type="submit" value="send">
+	
+	</div><!--end fixed send box area-->
+
+</div><!--end main chat container-->
+
+</div>
+</div><!--end wrapper-->	
+
+</body>
