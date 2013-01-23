@@ -1,0 +1,258 @@
+/*------------------------------------------
+	DESIGNED AND CODED BY JDUCHIMA.COM
+------------------------------------------*/	
+@charset "UTF-8";
+/* RESET */
+
+html, body, div, span, object,h1, h2, h3, h4, h5, h6, p, blockquote, pre, font,
+a, code, em, font, img, ins, kbd, q, s, samp, small,strong,dl, dt, dd, ol, ul, li,
+fieldset, form, label {
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+a {
+text-decoration: none;
+color: #4e4e4e;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+::selection {
+	background: #ea4c89;
+	color: #fff;
+}
+
+::-moz-selection {
+	background: #ea4c89;
+	color: #fff;
+}
+
+
+/*------------------------------
+ MAIN STYLES
+------------------------------*/
+
+body {
+	background-color: white;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+
+.wrapper {
+	margin: 0 auto;
+	width: 450px;
+	margin-top: 50px;
+}
+
+
+#chat_module {
+	height: 350px;
+	overflow: hidden;
+	width: 300px;
+	background-color: white;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+
+#chatborder {
+	/*width: 425px;*/
+	height: 350px;
+	background-color: white;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 20px;	
+}
+
+#visitors {
+	width: 29%;
+	float: left;
+	height: 550px;
+	background-color: #8d8d8d;
+	overflow: auto;
+}
+
+#transcript {
+	width: 100%;
+	height: 260px;
+	overflow: scroll;
+	border-left: 1px solid #e2e2e2;
+}
+
+/*------------------------------
+ CHAT HEADER STYLES
+------------------------------*/
+
+#client_chat_header {
+	width: 100%;
+	height: 40px;
+	background-color: #cc2d2d;
+	position: relative;
+}
+
+#client_chat_header p {
+	display: block;
+	font-size: 16px;
+	line-height: 40px;
+	color: white;
+	margin-left: 15px;
+	float: left; 
+}
+
+span.small_close_btn {
+	width: 22px;
+	height: 22px;
+	float: right;
+	position: absolute;
+	right: 8px;
+	top: 8px;
+}
+
+span.small_close_btn a {
+	background: url(images/chat_close_x.png) 0px 0px no-repeat;
+	display: block;
+	width: 22px;
+	height: 22px;
+}
+
+	span.small_close_btn a:hover {
+		background: url(images/chat_close_x.png) 0px -22px no-repeat;
+	}
+
+/*------------------------------
+ CHAT DISPLAY STYLES
+------------------------------*/
+
+.chat {
+	list-style: none;
+}
+
+.inbound, .outbound {
+	position: relative;
+}
+
+p.visitor_name, p.operator_name, p.time_stamp {
+	line-height: 16px;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0px 0px 10px 0px;
+	color: #d48013;
+	text-align: left;
+	display: inline-block;
+}
+
+	p.time_stamp {
+		color: #ababab;
+	}
+
+p.time_stamp {
+	text-align: right;
+	float: right;
+	font-size: 10px;
+}
+
+.outbound, .inbound, .typing {
+	text-align: left;
+	background-color: #eeeeee;
+	padding: 15px;
+	border-bottom: 1px solid #e2e2e2;		
+}	
+	.outbound .message {
+		text-align: left;
+	}
+
+.message, .typing {
+	line-height: 20px;
+	font-size: 12px;
+}
+	
+.messages {
+	list-style: none;
+}
+
+.inbound {
+	background-color: #ffffff;
+}
+
+.typing {
+	background-color: white;
+	font-size: 11px;
+	font-weight: bold;
+	color: #989898;
+	text-align: center;
+}
+
+/*------------------------------
+ SEND BOX STYLES
+------------------------------*/
+
+#sendbox {
+	width: 100%;
+	height: 50px;
+	background-color: #cc2d2d;
+	border-left: 1px solid #e2e2e2;
+}
+
+input[type="text"] {
+	display: block;
+	height: 24px;
+	margin: 10px;
+	margin-right: 0px;
+	width: 188px;
+	float: left;
+	border: solid 1px rgb(255, 39, 39);
+}
+
+	input[type="text"]:focus {
+	border: solid 1px #2954ff;
+	}
+
+input[type="submit"] {
+	background: url(images/send_sprite.png) 0px 0px no-repeat;
+	width: 92px;
+	height: 33px;
+	border: none;
+	color: transparent;
+	font-size: 0;
+	float: left;
+	margin: 8px;
+	margin-left: -4px;
+	cursor: pointer;
+}
+
+	input[type="submit"]:hover {
+		background: url(images/send_sprite.png) 0px -32px no-repeat;
+		cursor: pointer;
+	}
