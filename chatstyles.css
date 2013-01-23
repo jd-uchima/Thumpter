@@ -130,7 +130,7 @@ body {
 	position: relative;
 }
 
-p.visitor_name, p.operator_name, p.time_stamp {
+p.visitor_name, p.operator_chat_name, p.time_stamp {
 	line-height: 16px;
 	font-size: 12px;
 	font-weight: bold;

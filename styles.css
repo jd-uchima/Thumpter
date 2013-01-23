@@ -79,7 +79,8 @@ body {
 #headernav {
 	float: right;
 	line-height: 14px;
-	width: 140px;
+	width: 450px;
+	position: relative;
 }
 
 #header_signout {
@@ -89,9 +90,18 @@ body {
 #header_signout, #header_settings {
 	display: inline-block;
 	font-size: 10px;
-	padding: 0px 10px 0px 15px; 
+	padding: 10px 10px 10px 15px; 
 	border-left: 1px solid #ebebeb;
+	position: absolute;
 }
+
+	#header_signout {
+		right: 0px;
+	}
+	
+	#header_settings {
+		right: 70px;
+	}
 
 #header_signout img, #header_settings img {
 	width: 16px;
@@ -101,22 +111,24 @@ body {
 }
 
 #username {
-	width: 170px;
-	position: relative;
-	top: 25px;
-	right: 185px;
-}
-
-#username p {
-	text-align: right;
-}
-
-#username img {
-	width: 36px;
-	height: 34px;
 	position: absolute;
-	top: -10px;
+	top: 25px;
+	margin-right: 25px;
+	right: 125px;
 }
+
+	#username p {
+		text-align: right;
+		float: left;
+	}
+
+	#username img {
+		width: 36px;
+		height: 34px;
+		margin-top: -12px;
+		margin-right: 15px;
+		float: left;
+	}
 
 #container {
 	width: 980px;
