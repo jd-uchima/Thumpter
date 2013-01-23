@@ -50,6 +50,54 @@ text-decoration: underline;
 
 
 
+
+/*------------------------------
+ LOG IN PAGE STYLES
+------------------------------*/
+
+#login_container {
+	min-height: 250px;
+	overflow: auto;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width: 380px;
+	margin: 0 auto;	
+	margin-top: 50px;
+	background-color: white;	
+}
+
+#login_elements {
+	width: 300px;
+	padding: 40px;
+}
+
+	#login_elements h2 {
+		padding: 0px;
+	}
+	
+	#login_elements a {
+		font-size: 12px;
+		text-decoration: underline;
+	}
+
+p.signInHead {
+	font-size: 12px;
+	line-height: 18px;
+	color: #4e4e4e;
+	display: block;
+	width: 300px;
+}
+
+#login-form {
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 35px;
+}
+
+
+
 /*------------------------------
  MAIN STYLES
 ------------------------------*/
@@ -1098,7 +1146,10 @@ a.upgrade_button {
 ------------------------------*/
 
 #footer_bg {
-	position: relative;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	background-color: #f7f7f7;
 	height: 56px;
 	background: url('images/footer_bg.png') repeat-x;
