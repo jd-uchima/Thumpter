@@ -481,10 +481,86 @@ span.helper_text {
 	.add_new_site_buttons {
 		margin-top: 15px;
 	}
+	
+.add_new_site_buttons input[type="submit"] {
+		background: url(images/add_site-btn.png) 0px 0px no-repeat;
+		width: 150px;
+		height: 33px;
+		border: none;
+		color: transparent;
+		font-size: 0;
+		float: left;
+		cursor: pointer;
+	}
+	
+		.add_new_site_buttons input[type="submit"]:hover {
+			background: url(images/add_site-btn.png) 0px -33px no-repeat;
+		}
+		
+	.add_new_site_buttons input[type="delete"] {
+		background: url(images/delete_site-btn.png) 0px 0px no-repeat;
+		width: 150px;
+		height: 33px;
+		border: none;
+		color: transparent;
+		font-size: 0;
+		float: left;
+		cursor: pointer;
+	}
+	
+		.add_new_site_buttons input[type="delete"]:hover {
+			background: url(images/delete_site-btn.png) 0px -33px no-repeat;
+		}	
+			
 
-.edit_op_buttons {
-	margin-left: 150px;
+.edit_op_buttons, .add_new_site_buttons {
+	margin-left: 75px;
 }
+
+	.edit_op_buttons input[type="submit"] {
+		background: url(images/save-btn.png) 0px 0px no-repeat;
+		width: 150px;
+		height: 33px;
+		border: none;
+		color: transparent;
+		font-size: 0;
+		float: left;
+		cursor: pointer;
+	}
+	
+		.edit_op_buttons input[type="submit"]:hover {
+			background: url(images/save-btn.png) 0px -33px no-repeat;
+		}
+		
+	.edit_op_buttons input[type="delete"] {
+		background: url(images/delete-btn.png) 0px -33px no-repeat;
+		width: 150px;
+		height: 33px;
+		border: none;
+		color: transparent;
+		font-size: 0;
+		float: left;
+		cursor: pointer;
+	}
+	
+		.edit_op_buttons input[type="delete"]:hover {
+			background: url(images/delete-btn.png) 0px 0px no-repeat;
+		}
+		
+	.edit_op_buttons input[type="cancel"], .add_new_site_buttons input[type="cancel"] {
+		background: url(images/cancel-btn.png) 0px 0px no-repeat;
+		width: 150px;
+		height: 33px;
+		border: none;
+		color: transparent;
+		font-size: 0;
+		float: left;
+		cursor: pointer;
+	}
+	
+		.edit_op_buttons input[type="cancel"]:hover, .add_new_site_buttons input[type="cancel"]:hover {
+			background: url(images/cancel-btn.png) 0px -33px no-repeat;
+		}			
 
 .new_op_buttons input, .edit_op_buttons input, .add_new_site_buttons input {
 	width: 100px;
