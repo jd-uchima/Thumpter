@@ -402,7 +402,7 @@ label {
 
 input {
 	margin-bottom: 25px;
-	width: 225px;
+	/*min-width: 225px;*/
 }
 
 .left_col_fields {
@@ -482,7 +482,7 @@ span.helper_text {
 		margin-top: 15px;
 	}
 	
-.add_new_site_buttons input[type="submit"] {
+.add_new_site_buttons input[type="submit"], .purchase_buttons input[type="submit"] {
 		background: url(images/add_site-btn.png) 0px 0px no-repeat;
 		width: 150px;
 		height: 33px;
@@ -493,7 +493,7 @@ span.helper_text {
 		cursor: pointer;
 	}
 	
-		.add_new_site_buttons input[type="submit"]:hover {
+		.add_new_site_buttons input[type="submit"]:hover, .purchase_buttons input[type="submit"]:hover {
 			background: url(images/add_site-btn.png) 0px -33px no-repeat;
 		}
 		
@@ -547,7 +547,7 @@ span.helper_text {
 			background: url(images/delete-btn.png) 0px 0px no-repeat;
 		}
 		
-	.edit_op_buttons input[type="cancel"], .add_new_site_buttons input[type="cancel"] {
+	.edit_op_buttons input[type="cancel"], .add_new_site_buttons input[type="cancel"], .purchase_buttons input[type="cancel"] {
 		background: url(images/cancel-btn.png) 0px 0px no-repeat;
 		width: 150px;
 		height: 33px;
@@ -558,7 +558,7 @@ span.helper_text {
 		cursor: pointer;
 	}
 	
-		.edit_op_buttons input[type="cancel"]:hover, .add_new_site_buttons input[type="cancel"]:hover {
+		.edit_op_buttons input[type="cancel"]:hover, .add_new_site_buttons input[type="cancel"]:hover, .purchase_buttons input[type="cancel"]:hover {
 			background: url(images/cancel-btn.png) 0px -33px no-repeat;
 		}			
 
@@ -1252,6 +1252,38 @@ a.upgrade_button {
 #biz_info_form {
 	margin: 25px;
 }
+
+	#biz_info_form input {
+		min-width: 150px !important;
+	}
+	
+	label[for=state], select[name=state] {
+		margin-right: 200px;
+	}
+
+	.left_col_purchase {
+		float: left;
+	}
+	
+	.right_col_purchase {
+		float: right;
+	}
+	
+	input[type=cancel] {
+		width: 100px;
+	}
+.purchase_buttons {
+	margin-left: 150px;
+	margin-top: 25px;
+}
+
+.purchase_buttons input[type="submit"] {
+		background: url(images/next_stp-btn.png) 0px 0px no-repeat;
+	}
+	
+		.purchase_buttons input[type="submit"]:hover {
+			background: url(images/next_stp-btn.png) 0px -33px no-repeat;
+		}	
 		
 /*------------------------------
  FOOTER Section
