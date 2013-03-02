@@ -811,7 +811,7 @@ a.add_new_site {
  MANAGE SITES Section
 ------------------------------*/
 
-#manage_site_container, #manage_site_container_2, #settings_home {
+#manage_site_container, #manage_site_container_2, #settings_home, #purchase_fields {
 	min-height: 250px;
 	overflow: auto;
 	border: 1px solid #e5e5e5;
@@ -1127,6 +1127,10 @@ h3.customize_headings {
 	overflow: visible;	
 }
 
+#purchase_fields {
+	min-height: 350px;
+}
+
 p.settings_heading {
 	font-size: 22px;
 	color: #666666;
@@ -1216,6 +1220,38 @@ a.upgrade_button {
 	a.upgrade_button:hover {
 		background-position: 0px -38px;
 	}
+	
+#purchase_steps {
+	min-height: 50px;
+	margin-bottom: 25px;
+}
+
+	#purchase_steps p {
+		width: 218px;
+		line-height: 50px;
+		font-size: 14px;
+		font-weight: 600;
+		color: white;
+		float: left;
+		text-align: center;
+		border-right: 2px solid white;
+	}
+	
+		p.selected_step {
+			background-color: #cc2c2c;
+		}
+				
+		p.non_selected_step {
+			background-color: #cacaca;
+			line-height: 40px !important;
+			margin-top: 5px;
+			color: #6c6c6c !important;
+			font-weight: 400 !important;			
+		}
+		
+#biz_info_form {
+	margin: 25px;
+}
 		
 /*------------------------------
  FOOTER Section
