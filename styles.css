@@ -1249,17 +1249,31 @@ a.upgrade_button {
 			font-weight: 400 !important;			
 		}
 		
-#biz_info_form {
+#biz_info_form, #credit_card_form {
 	margin: 25px;
 }
 
-	#biz_info_form input {
+	#biz_info_form input, #credit_card_form input {
 		min-width: 150px !important;
 	}
 	
 	label[for=state], select[name=state] {
 		margin-right: 200px;
 	}
+	
+	select[name=cardtype] {
+		margin-bottom: 25px;
+		width: 200px;
+	}
+	
+	select[name=month], select[name=year] {
+		width: 100px;
+		margin-right: 20px;
+	}
+	
+		select[name=year] {
+			margin-top: 15px;
+		}
 
 	.left_col_purchase {
 		float: left;
@@ -1272,6 +1286,13 @@ a.upgrade_button {
 	input[type=cancel] {
 		width: 100px;
 	}
+
+.right_col_purchase img {
+	margin-right: 170px;
+	margin-top: 10px;
+}	
+	
+	
 .purchase_buttons {
 	margin-left: 150px;
 	margin-top: 25px;
@@ -1283,7 +1304,28 @@ a.upgrade_button {
 	
 		.purchase_buttons input[type="submit"]:hover {
 			background: url(images/next_stp-btn.png) 0px -33px no-repeat;
-		}	
+		}
+		
+.confirm_header {
+	margin: 15px;
+	border-bottom: 1px dashed #c9c9c9;
+	height: 50px;
+}
+
+p.purchase_heading {
+	font-size: 22px;
+	color: #666666;
+	line-height: 40px;
+	width: 100%;
+	font-weight: bold;
+	float: left;
+	text-align: center;
+}
+
+h3.purchase_confirm {
+	line-height: 28px;
+	text-align: left;
+}			
 		
 /*------------------------------
  FOOTER Section
