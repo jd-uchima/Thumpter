@@ -96,6 +96,30 @@ p.signInHead {
 	margin-top: 35px;
 }
 
+#login-form input {
+	width: 285px;
+	height: 25px;
+}
+
+input[type="password"] {
+	margin-bottom: 10px !important;
+}
+
+#login-form input[type="submit"] {
+		background: url(images/login-btn.png) 0px 0px no-repeat;
+		width: 295px;
+		height: 33px;
+		border: none;
+		color: transparent;
+		font-size: 0;
+		float: left;
+		cursor: pointer;
+	}
+	
+		#login-form input[type="submit"]:hover {
+			background: url(images/login-btn.png) 0px -33px no-repeat;
+		}
+
 
 
 /*------------------------------
@@ -244,7 +268,7 @@ ul#left_nav {
 }
 
 ul#left_nav img {
-	width: 14px;
+	width: 15px;
 	height: 17px;
 	float: right;
 	margin-right: 15px;
@@ -272,9 +296,9 @@ li.selected_nav p {
 }
 
 	.selected_state {
-		margin-right: 35px !important;
+		margin-right: 40px !important;
 		bottom: -5px !important;
-		width: 18px !important;
+		width: 15px !important;
 		height: 17px !important;
 	}
 	
@@ -758,7 +782,7 @@ a.add_new_site {
 
 .manage_operators_status {
 	width: 155px;
-	min-height: 250px;
+	min-height: 125px;
 	border: 1px solid #e5e5e5;
 	float: left;
 	overflow: auto;
@@ -804,6 +828,7 @@ a.add_new_site {
 	.edit_op_button a {
 		text-decoration: none;
 		color: white;
+		padding: 10px;
 	}
 
 
@@ -1089,6 +1114,21 @@ h3.customize_headings {
 		margin-left: 250px;
 		margin-top: 20px;
 	}
+	
+	.center_button input[type="submit"] {
+		background: url(images/save-btn.png) 0px 0px no-repeat;
+		width: 150px;
+		height: 33px;
+		border: none;
+		color: transparent;
+		font-size: 0;
+		float: left;
+		cursor: pointer;
+	}
+	
+		.center_button input[type="submit"]:hover {
+			background: url(images/save-btn.png) 0px -33px no-repeat;
+		}
 	
 	.center_button_long input {
 		width: 200px;
