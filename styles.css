@@ -1008,9 +1008,8 @@ h3 {
 
 #chat_preview {
 	width: 300px;
-	height: 450px;
 	float: right;
-	background-color: #ebeae6;
+	margin-right: 1px;
 }
 
 #left_pickers, #right_pickers {
