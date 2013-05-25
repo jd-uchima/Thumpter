@@ -1363,7 +1363,7 @@ a.upgrade_button {
 }
 
 	#biz_info_form input, #credit_card_form input {
-		min-width: 150px !important;
+		width: 100% !important;
 	}
 	
 	label[for=state], select[name=state] {
