@@ -202,14 +202,18 @@ body {
 		float: left;
 	}
 
-#container {
+#container, #container_dashboard {
 	width: 980px;
-	min-height: 800px;
+	min-height: 900px;
 	overflow: auto;
 	background-color: white;
 	display: block;
 	margin-bottom: -3px;
 }
+
+	#container_dashboard {
+		min-height: 1350px;
+	}
 
 h2 {
 	font-size: 18px;
@@ -320,9 +324,9 @@ li.selected_nav p {
 
 #body {
 	width: 730px;
-	min-height: 750px;
+	min-height: 500px;
 	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-bottom: 45px;
 	background-color: white;
 	border: 1px solid #e5e5e5;	
 	float: right;
@@ -730,7 +734,7 @@ span.helper_text {
 
 #manage_operators, #main_container {
 	width: 660px;
-	min-height: 800px;
+	min-height: 700px;
 	overflow: auto;
 	margin: 0 auto;
 	margin-top: 20px;
@@ -1363,11 +1367,17 @@ a.upgrade_button {
 }
 
 	#biz_info_form input, #credit_card_form input {
-		width: 100% !important;
+		width: 100%;
 	}
 	
 	label[for=state], select[name=state] {
-		margin-right: 200px;
+		width: 223px;
+	}
+	
+	@-moz-document url-prefix() { 
+		label[for=state], select[name=state] {
+			width: 288px;
+		}
 	}
 	
 	select[name=cardtype] {
@@ -1409,10 +1419,16 @@ a.upgrade_button {
 
 .purchase_buttons input[type="submit"] {
 		background: url(images/next_stp-btn.png) 0px 0px no-repeat;
+		margin-right: 20px;
+		width: 150px !important;
 	}
 	
 		.purchase_buttons input[type="submit"]:hover {
 			background: url(images/next_stp-btn.png) 0px -33px no-repeat;
+		}
+		
+		.purchase_buttons input[type="cancel"] {
+			width: 150px !important;
 		}
 		
 .confirm_header {

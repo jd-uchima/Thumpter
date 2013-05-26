@@ -80,10 +80,18 @@ body {
 		padding: 10px;
 	}
 	
-	.visitor_list li span img {
+	.visitor_list li span.close_x img {
 		float: right !important;
 		margin-right: 0px !important;
 		margin-top: 7px;
+	}
+	
+	.visitor_list li a.chat_info {
+		margin-right: 25px;
+	}
+	
+	.visitor_list li a.chat_info img {
+		float: none !important;;
 	}
 	
 		.visitor_list li.selected {
@@ -117,6 +125,33 @@ body {
 	.visitor_list li a:hover {
 		text-decoration: none;
 	}
+	
+/*------------------------------
+ SITE VISITOR POP OVER
+------------------------------*/
+
+.visitor_list li a.chat_info span {
+	display: none;
+}
+
+	.visitor_list li a.chat_info:hover span {
+		display: block;
+		position: absolute;
+		width: 130px;
+		padding: 10px;
+		background-color: rgba(0,0,0,0.85);
+		font-size: 11px;
+		line-height: 18px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+	}
+	
+	.visitor_list li a.chat_info span img {
+		position: absolute;
+		top: -12px;
+		right: 29px;
+	}
+	
 
 /*------------------------------
  CHAT DISPLAY STYLES

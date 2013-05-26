@@ -12,15 +12,6 @@
 <link rel="stylesheet" href="chatstyles.css" />
 <link rel="shortcut icon" href="images/icon.ico" />
 
-	<!-- Add jQuery library -->
-	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-<script>
-	$(document).ready(function() {
-		$("li.selected").fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500);
-	});
-</script>
-
 </head>
 
 <body>
@@ -56,7 +47,7 @@
 	
 	<div class="wrapper">
 	
-	<div id="container">
+	<div id="container_dashboard">
 	
 		<div id="nav">
 			
@@ -133,7 +124,10 @@
 			<li><a href="#">192.256.5.6</a></li>
 			<li><a href="#">192.256.532.436</a></li>
 			<li><a href="#">192.256.5.6</a></li>
-			<li class="selected"><a href="#">192.168.0.1</a><span><a href="#"><img src="images/close-x.png"></a></span></li>
+			<li class="selected"><a href="#">192.168.0.1</a>
+				<span class="close_x"><a href="#"><img src="images/close-x.png"></a></span>
+				<a class="chat_info" href="#"><img src="images/info_icon.png"><span class="info_pop"><img src="images/pop_arrow.png">samplePage1 (14:28) samplePage2 (14:28) samplePage3 (14:28) samplePage4 (14:28) samplePage5 (14:28) samplePage6 (14:28) samplePage7 (14:28) samplePage8 (14:28) samplePage9 (14:28) samplePage10 (14:28)</span></a>
+			</li>
 			<li><a href="#">192.256.5.6</a></li>
 			<li><a href="#">192.256.5.6</a></li>
 			<li><a href="#">192.256.5.6</a></li>
@@ -321,3 +315,4 @@
 
 
 </body>
+</html>
