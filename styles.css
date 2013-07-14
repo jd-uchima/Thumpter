@@ -335,17 +335,40 @@ li.selected_nav p {
 }
 
 
+/* CURRENT VISITORS ON SITES SECTION
+------------------------------------*/
+
+#current_visitors {
+	width: 660px;
+	margin: 0 auto;
+	margin-top: 65px;
+}
+
+#current_visitors img {
+	float: left;
+	margin-right: 15px;
+}
+
+#chat_module, #chat_log_area {
+	min-height: 420px;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;	
+}
+
+
 /* MY OPERATORS SECTION
 ------------------------------*/
 
-#my_operators {
+#my_operators, #chat_log {
 	width: 660px;
 	overflow: auto;
 	margin: 0 auto;
 	margin-top: 20px;
 }
 
-#my_operators img {
+#my_operators img, #chat_log img {
 	float: left;
 	margin-right: 15px;
 }
@@ -407,6 +430,160 @@ li.selected_nav p {
 		color: #666666;
 		line-height: 16px;
 	}
+
+/*----------------------------
+ VIEW CHAT LOG
+------------------------------*/
+
+#chat_log {
+	margin-bottom: 50px;
+}
+
+#chat_log_area {
+	min-height: 420px;
+	overflow: auto;
+	width: 658px;
+	background-color: white;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#chat_filter {
+	width: 35%;
+	float: left;
+	height: 650px;
+	background-color: #f8f8f8;
+	overflow: auto;
+}
+
+#chat_log_search {
+	margin-top: 25px;
+	height: 70px;
+	border-bottom: solid 2px #DDDDDD;
+}
+
+
+	/* SEARCH INPUT STYLES
+	------------------------------*/
+	
+	input[type="search_field"] {
+		display: block;
+		height: 23px;
+		margin: 11px;
+		margin-right: 0px;
+		float: left;
+		border: solid 1px #FF9305;
+	}
+	
+		input[type="search_field"]:focus {
+		border: solid 1px #2954ff;
+		}
+	
+	input[type="search_button"] {
+		background: url(images/search_logs-bttn.png) 0px 0px no-repeat;
+		width: 92px;
+		height: 33px;
+		border: none;
+		color: transparent;
+		font-size: 0;
+		float: left;
+		margin: 8px 0px 8px -4px;
+		cursor: pointer;
+	}
+	
+		input[type="search_button"]:hover {
+			background: url(images/search_logs-bttn.png) 0px -32px no-repeat;
+			cursor: pointer;
+		}
+		
+	label[for=search_logs] {
+		display: block;
+		font-size: 14px;
+		color: #666666;
+		margin-bottom: 0px;
+		margin-left: 10px;
+	}
+	
+	/* FILTER BUTTON STYLES
+	------------------------------*/
+	
+	input[type="filter_chat_button"] {
+		background: url(images/chatlogs_filter-btn.png) 0px 0px no-repeat;
+		width: 92px;
+		height: 33px;
+		border: none;
+		color: transparent;
+		font-size: 0;
+		float: left;
+		margin: 35px 0px 0px -4px;
+		cursor: pointer;
+	}
+	
+		input[type="filter_chat_button"]:hover {
+			background: url(images/chatlogs_filter-btn.png) 0px -32px no-repeat;
+			cursor: pointer;
+		}
+
+#custom_search {
+	height: 200px;
+	margin-top: 35px;
+	margin-left: 11px;
+}
+
+p.custom_filter_title {
+	font-size: 16px;
+	color: #666666;
+	margin-bottom: 18px;
+}
+
+.from_tri_drop_filter, .to_tri_drop_filter, .chat_log_search {
+	margin-top: 25px;
+	float: left;
+}
+
+	.from_tri_drop_filter select[name=chat_log_month], select[name=chat_log_day], select[name=chat_log_year] {
+		width: 58px !important;
+	}
+	
+	.to_tri_drop_filter select[name=chat_log_month], select[name=chat_log_day], select[name=chat_log_year] {
+		width: 58px !important;
+	}	
+	
+	.month, .day, .year {
+		float: left;
+		margin-right: 15px;
+	}
+	
+		.day, .year {
+			margin-top: 14px;
+		}
+
+.chat_log_search select[name=select_site] {
+	float: left;
+	width: 200px;
+}
+
+
+/* SEARCH RESULTS TOP & BOTTOM AREA STYLES
+----------------------------------*/
+
+#search_results {
+	width: 100%;
+	height: 250px;
+	background-color: #8b8b8b;
+}
+
+#search_details {
+	width: 100%;
+	height: 400px;
+	background-color: #cdcdcd;
+}		
+
+
+/*-------------------------------------------------------
+-------------------------------------------------------*/
 
 
 /* ADD NEW OPERATOR FORM AREA
@@ -597,28 +774,6 @@ span.helper_text {
 
 .new_op_buttons input:hover, .edit_op_buttons input:hover, .add_new_site_buttons input:hover {
 	cursor: pointer;
-}
-	
-/* CURRENT VISITORS ON SITES SECTION
-------------------------------------*/
-
-#current_visitors {
-	width: 660px;
-	margin: 0 auto;
-	margin-top: 65px;
-}
-
-#current_visitors img {
-	float: left;
-	margin-right: 15px;
-}
-
-#chat_module {
-	min-height: 420px;
-	border: 1px solid #e5e5e5;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;	
 }
 
 
