@@ -453,9 +453,8 @@ li.selected_nav p {
 #chat_filter {
 	width: 35%;
 	float: left;
-	height: 650px;
+	height: 900px;
 	background-color: #f8f8f8;
-	overflow: auto;
 }
 
 #chat_log_search {
@@ -569,17 +568,90 @@ p.custom_filter_title {
 /* SEARCH RESULTS TOP & BOTTOM AREA STYLES
 ----------------------------------*/
 
-#search_results {
-	width: 100%;
-	height: 250px;
-	background-color: #8b8b8b;
+#search_results_panel {
+	width: 65%;
+	height: 450px;
+	background-color: #fff;
+	float: left;
 }
 
-#search_details {
-	width: 100%;
+#results_scroll_container {
 	height: 400px;
+	overflow: scroll;
+}
+
+#results_header {
+	width: 100%;
+	height: 50px;
+	background-color: #675c53;
+	position: inherit;
+	top: 0;
+}
+
+	p.results_col_name {
+		line-height: 50px;
+		font-size: 13px;
+		color: #fff;
+		display: block;
+		float: left;
+		margin-left: 10px;
+		width: 30%;
+	}
+
+#search_details {
+	width: 65%;
+	height: 450px;
 	background-color: #cdcdcd;
-}		
+	float: left;
+}
+
+.results_row_item_white, .results_row_item_grey {
+	width: 100%;
+	height: 150px;
+	padding-top: 10px;
+	position: relative;
+}
+
+	.results_row_item_white a, .results_row_item_grey a {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 10;
+	}
+	
+	.results_row_item_white:hover, .results_row_item_grey:hover	{
+		background-color: #fff3e3;
+	}
+
+.results_row_item_grey {
+	background-color: #e3e1e0;
+}
+
+.results_row_item_white {
+	background-color: #fff;
+}
+
+.results_row_item_grey p, .results_row_item_white p {
+	font-size: 11px;
+	color: #666666;
+	line-height: 14px;
+}
+
+p.results_site_name, p.results_op_name, p.results_convo_preview {
+	display: block;
+	width: 28%;
+	float: left;
+	padding: 5px;
+	margin-left: 5px;
+}
+
+	p.results_op_name, p.results_convo_preview {
+		margin-left: 10px;
+	}
+
+		
 
 
 /*-------------------------------------------------------
